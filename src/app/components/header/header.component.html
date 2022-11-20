@@ -3,13 +3,18 @@
   <span class="example-spacer"></span>
   <ul class="header-menu">
     <li>
-      <a routerLink="/">Home</a>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
     </li>
     <li>
-      <a routerLink="/about">about</a>
+      <a routerLink="/about" routerLinkActive="active">about</a>
     </li>
     <li>
-      <a routerLink="/cardvisits">cardvisits</a>
+      <a routerLink="/cardvisits" routerLinkActive="active">cardvisits</a>
     </li>
   </ul>
 </mat-toolbar>
