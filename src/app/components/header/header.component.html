@@ -1,1 +1,20 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+  <span>Cardvisit App</span>
+  <span class="example-spacer"></span>
+  <ul class="header-menu">
+    <li>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a routerLink="/about" routerLinkActive="active">about</a>
+    </li>
+    <li>
+      <a routerLink="/cards" routerLinkActive="active">cardvisits</a>
+    </li>
+  </ul>
+</mat-toolbar>
